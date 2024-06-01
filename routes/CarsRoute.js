@@ -10,10 +10,10 @@ const app = express();
 const router = express.Router();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://keha-projekt.onrender.com",
+  optionSuccessStatus: 200,
   methods: "GET,POST,DELETE",
 };
-
 app.use(cors(corsOptions));
 app.use(express.json()); // Middleware, um JSON-Requests zu parsen
 
