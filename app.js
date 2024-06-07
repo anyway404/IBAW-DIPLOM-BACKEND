@@ -17,7 +17,7 @@ server.use(bodyParser.json());
 server.use(cors());
 
 server.use("/api/v1", CarsRoute); // Routen für die Buchungen
-server.use("/api/v1/users", UserRoute); // Routen für Benutzer
+server.use("/api/v1/users", UserRoute); // Routen für Login
 
 server.listen(PORT, () => {
   console.log(`Server started on port ${PORT}`);
